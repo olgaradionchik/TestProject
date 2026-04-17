@@ -17,8 +17,7 @@ public class Lesson_2 {
         arrayThree(); //Вызов метода с массивом по Заданию 12
         arrayFour(); //Вызов метода с массивом по Заданию 13
         int[] myArr = arrayFive (5, 10);//Вызов метода - Задание_14
-        System.out.println(java.util.Arrays.toString(myArr)); //Вывод на печать - Задание_14
-
+        System.out.println(Arrays.toString(myArr)); //Вывод на печать - Задание_14
     }
     //Задание_1
     public static void printThreeWords(){
