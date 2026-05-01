@@ -10,14 +10,14 @@ public class Main {
         //Выводим студентов, кто на 1 курсе
         printStudents(new HashSet<>(students), 1);
         //Задание - 1
-        //Удаляем студентов которые плохо учаться
+        //Удаляем студентов которые плохо учатся
         removeLowGradesStudents(students);
         //Переводим оставшихся на следующий курс
         moveToTheNextCourse(students);
         System.out.println("\nКто переведен на курс выше: ");
-        //Проверяем, кто теперь на 3 курсе
+        //Проверяем, кто теперь на 2 курсе
         printStudents(new HashSet<>(students), 2);
-        // Проверяем, кто на 4 курсе
+        //Проверяем, кто на 3 курсе
         printStudents(new HashSet<>(students), 3);
         //Задание - 2
         //Создаем объект нашего класса
@@ -37,7 +37,7 @@ public class Main {
         //Поиск фамилии, которой нет в списке
         myPhonebook.get("Самсонов");
     }
-    //Метод удаляет стедентов у которых средний бал <3
+    //Метод удаляет стедентов у которых средний балл <3
     public static void removeLowGradesStudents(List<Student> students) {
         Iterator<Student> it = students.iterator();
         while (it.hasNext()) {

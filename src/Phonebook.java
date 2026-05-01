@@ -1,7 +1,7 @@
 import java.util.*;
 public class Phonebook {
-    // Внутренняя память справочника.
-    // Мы объявляем её private, чтобы данные нельзя было изменить напрямую извне.
+    //Внутренняя память справочника.
+    //Мы объявляем её private, чтобы данные нельзя было изменить напрямую извне.
     private Map<String, List<String>> bookOfPhones = new HashMap<>();
     //Создаем метод для добавления
     public void add(String surname, String phone) {
@@ -18,7 +18,7 @@ public class Phonebook {
             //Выводим результат
             System.out.println("Найдены номера для фамилии: "  + surname+ ", номера: "+ phones);
         } else {
-            //Валидашка на отсутствия ключа-фамилии в списке
+            //Валидашка на отсутствие ключа-фамилии в списке
             System.out.println("Нет данных для фамилии: " + surname);
         }
     }
